@@ -5,21 +5,35 @@
     background-color: rgb(79, 168, 168);
 }
 
+header {
+    height: 20%;
+}
+
 h1,h2 {
     font-family: Andale Mono, monospace;
-    /* font-weight: lighter; */
+    font-weight: bolder;
     text-align: center; 
-    color:#166286;
+    color: #e192ec;
 }
 
 #nav-name {
     display:inline-flex;
-    width: 27%;
+    background-size: cover;
+    width: 24%;
+    padding: 0 15px;
+    align-items: center;
+    margin: 0 50px 15px -10px;
+    background-color: #ffffff;
+    box-shadow: 6px 4px #e192ec;
+}
+
+#nav-name h1 {
+    background-color: transparent;
+    color:#0e91a5;
 }
 
 #nav-bar {
     width: 73%;
-    margin-top: 30px;
     float: right;
 }
 
@@ -37,8 +51,7 @@ a {
     text-align: center;
     text-decoration: none;
     font-size: 250%;
-    color:#ffffff;
-    background-color: transparent;
+    color:#0e91a5;
 }
 
 #nav-bar nav a {
@@ -46,14 +59,16 @@ a {
     text-decoration: none;
     font-size: 155%;
     color:#b4c3ca;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    box-shadow: 6px 4px #e192ec;
 }
 
 #nav-bar nav a:hover{
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-color: aqua;
-    border-block-start-style:solid;
-    border-bottom-width: 7px;
+    border: 2px solid #0e91a5;
+    padding: 10px;
+    box-shadow: 6px 4px #0e91a5;
+    color:#ffffff;
 }
 
 .project-1 {
@@ -64,11 +79,10 @@ a {
     overflow: auto;
     width: 75%;
     height: 250px;
-    border: solid;
-    background-color: grey;
-    background-image: url("Challenge-2/assets/images/project-1.jpg");
+    background-image: url("./images/project-1.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    background-position: 25% 35%;
+    background-repeat: no-repeat;
     opacity: 0.6;
 }
 
@@ -81,9 +95,11 @@ a {
     align-items: center;
     width: 25%;
     height:750px;
-    background-image: url("Challenge-2/assets/images/project-2.jpg");
+    background-image: url("./images/project-2.jpg");
+    background-size: cover;
+    background-position: 10% 0;
+    background-repeat: no-repeat;    
     opacity: 0.6;
-    border: solid;
 }
 
 
@@ -96,22 +112,39 @@ a {
     text-align: center;
     height: 750px;
     width: 25%;
-    background-image: url("Challenge-2/assets/images/project-3.jpg");
+    background-image: url("./images/project-3.jpg");
+    background-size: cover;
+    background-position: 10% 0;
+    background-repeat: no-repeat;
     opacity: 0.6;
-    border: solid;
 }
 
 .profile{
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: safe center;
     overflow: auto;
     height: 500px;
     width: 50%;
-    background-image: url("Challenge-2/assets/images/project-1.jpg");
+    background-image: url("./images/profile.jpg");
+    background-size: cover;
+    background-position: 10% 55%;
+    background-repeat: no-repeat;
     opacity: 0.6;
-    border: solid;
+    margin-bottom: auto;
+}
+
+.profile a {
+    color:#0e91a5;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #e192ec;
+}
+
+.profile h2 {
+    color:#e192ec;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0e91a5;
+    background-color: transparent;
 }
 
 .project-4 {
@@ -121,10 +154,17 @@ a {
     align-items: safe center;
     overflow: auto;
     width: 75%;
-    background-image: url("Challenge-2/assets/images/project-4.jpg");
+    background-image: url("./images/project-4.jpg");
+    background-size: cover;
+    background-position: 10% 75%;
+    background-repeat: no-repeat;    
     height: 250px;
     opacity: 0.6;
-    border: solid;
+}
+
+.project-1 a, .project-2 a, .project-3 a, .profile a, .project-4 a {
+    background-color: transparent;
+    text-align: center;
 }
 
 .project-1:hover, .project-2:hover,.project-3:hover,.profile:hover,.project-4:hover {
@@ -132,15 +172,28 @@ a {
 }
 
 #about-me {
-    display: flex;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
 }
 
-#about-me h1{
+#about-me div{
+    justify-content: center;
+    display: flex;
     text-align: center;
     font-size: 175%;
+    padding: 5px;
 }
+
+#about-me h1 {
+    padding: 5px 10px;
+    border-color: #ffffff;
+    border-width: 2px 0 2px 0;
+    border-style: solid;
+}
+
 
 p {
     width: 100%;
