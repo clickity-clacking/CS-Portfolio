@@ -1,0 +1,150 @@
+*{
+    font-family: Monaco, monospace;
+    font-weight: lighter;
+    box-sizing: border-box;
+    background-color: rgb(79, 168, 168);
+}
+
+h1,h2 {
+    font-family: Andale Mono, monospace;
+    /* font-weight: lighter; */
+    text-align: center; 
+    color:#166286;
+}
+
+#nav-name {
+    display:inline-flex;
+    width: 27%;
+}
+
+#nav-bar {
+    width: 73%;
+    margin-top: 30px;
+    float: right;
+}
+
+#nav-bar nav {
+    display: flex;
+    /* justify-content for adjusting spacing around main axis, align-items for secondary axis (in this case vertical)*/
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: large;
+    text-decoration: none;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 250%;
+    color:#ffffff;
+    background-color: transparent;
+}
+
+#nav-bar nav a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 155%;
+    color:#b4c3ca;
+}
+
+#nav-bar nav a:hover{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-color: aqua;
+    border-block-start-style:solid;
+    border-bottom-width: 7px;
+}
+
+.project-1 {
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+    width: 75%;
+    height: 250px;
+    border: solid;
+    background-color: grey;
+    background-image: url("Challenge-2/assets/images/project-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.6;
+}
+
+.project-2 {
+    float:right;
+    display: flex;
+    text-align: center; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height:750px;
+    background-image: url("Challenge-2/assets/images/project-2.jpg");
+    opacity: 0.6;
+    border: solid;
+}
+
+
+.project-3 {
+    float:left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;  
+    text-align: center;
+    height: 750px;
+    width: 25%;
+    background-image: url("Challenge-2/assets/images/project-3.jpg");
+    opacity: 0.6;
+    border: solid;
+}
+
+.profile{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: safe center;
+    overflow: auto;
+    height: 500px;
+    width: 50%;
+    background-image: url("Challenge-2/assets/images/project-1.jpg");
+    opacity: 0.6;
+    border: solid;
+}
+
+.project-4 {
+    text-align: center; 
+    display: flex;
+    justify-content: space-around;
+    align-items: safe center;
+    overflow: auto;
+    width: 75%;
+    background-image: url("Challenge-2/assets/images/project-4.jpg");
+    height: 250px;
+    opacity: 0.6;
+    border: solid;
+}
+
+.project-1:hover, .project-2:hover,.project-3:hover,.profile:hover,.project-4:hover {
+    opacity: .9;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#about-me h1{
+    text-align: center;
+    font-size: 175%;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    font-size: 125%;
+    color:#bcdaea;
+}
