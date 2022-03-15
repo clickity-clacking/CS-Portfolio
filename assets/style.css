@@ -1,5 +1,6 @@
 *{
     font-family: Monaco, monospace;
+    font-size: 18px;
     font-weight: lighter;
     box-sizing: border-box;
     background-color: rgb(79, 168, 168);
@@ -19,7 +20,7 @@ h1,h2 {
 #nav-name {
     display:inline-flex;
     background-size: cover;
-    width: 24%;
+    width: 30%;
     padding: 0 15px;
     align-items: center;
     margin: 0 50px 15px -10px;
@@ -28,12 +29,13 @@ h1,h2 {
 }
 
 #nav-name h1 {
+    font-size: 1.75rem;
     background-color: transparent;
     color:#0e91a5;
 }
 
 #nav-bar {
-    width: 73%;
+    width: 66%;
     float: right;
 }
 
@@ -50,14 +52,14 @@ h1,h2 {
 a {
     text-align: center;
     text-decoration: none;
-    font-size: 250%;
+    font-size: 2.5rem;
     color:#0e91a5;
 }
 
 #nav-bar nav a {
     text-align: center;
     text-decoration: none;
-    font-size: 155%;
+    font-size: 1.55rem;
     color:#b4c3ca;
     border: 2px solid #ffffff;
     padding: 10px;
@@ -69,6 +71,10 @@ a {
     padding: 10px;
     box-shadow: 6px 4px #0e91a5;
     color:#ffffff;
+}
+
+.tile {
+    padding: 5px;
 }
 
 .project-1 {
@@ -200,4 +206,29 @@ p {
     text-align: center;
     font-size: 125%;
     color:#bcdaea;
+}
+
+@media screen and (max-width:1330px) {
+
+    #nav-name {
+        display:inline-flex;
+        background-size: cover;
+        width: 24%;
+        padding: 0 15px;
+        align-items: center;
+        margin: 0 20px 10px -10px;
+        background-color: #ffffff;
+        box-shadow: 6px 4px #e192ec;
+    }
+
+    #nav-bar nav a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.25rem;
+        color:#b4c3ca;
+        border: 2px solid #ffffff;
+        padding: 10px;
+        box-shadow: 6px 4px #e192ec;
+    }
+    
 }
